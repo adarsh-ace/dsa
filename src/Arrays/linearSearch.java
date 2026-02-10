@@ -2,18 +2,23 @@ package Arrays;
 import java.util.*;
 public class linearSearch {
     public static void main(String[] args){
-        int number[] = {15,85,98,36,25,75,15,21,12,98,32};
-        int key = 21;
+//        int number[] = {15,85,98,36,25,75,15,21,12,98,32};
+//        int key = 21;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the size of the array");
+        int n = sc.nextInt();          // size
 
-//        int n = sc.nextInt();          // size
-//        int[] number = new int[n];
-//
-//        for (int i = 0; i < n; i++) {
-//            number[i] = sc.nextInt();     // elements
-//        }
-//        int key = sc.nextInt();
+        int[] number = new int[n];
+        System.out.println("enter the numbers of the array");
+        for (int i = 0; i < n; i++) {
+            number[i] = sc.nextInt();     // elements
+        }
+
+        System.out.println("Enter the Key value");
+        int key = sc.nextInt();
+
         int index = linearSearch(number,key);
-        if(index == 1){
+        if(index == -1){
             System.out.println("Number not found");
         }else{
             System.out.println("Number is at index : " + index);
