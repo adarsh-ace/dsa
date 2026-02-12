@@ -1,10 +1,17 @@
 package Arrays;
-
+import java.util.*;
 public class LargestInArray {
     public static void main(String[] args){
-        int numbers[] = {54,25,45,96,75,13,42,71};
+       Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the size of the Array");
+        int n = sc.nextInt();
+        int numbers[] = new int[n];
+        System.out.println("Enter the numbers of the Array");
+        for(int i= 0;i<n;i++){
+            numbers[i] = sc.nextInt();
+        }
         int largest = getLargest(numbers);
-        System.out.println(largest);
+        System.out.println("Largest number in the Array is : " + largest);
     }
     public static int getLargest(int numbers[]){
         int largest = Integer.MIN_VALUE;

@@ -15,7 +15,6 @@ public class reverseArray {
         for(int i = 0;i < n ; i++){
             System.out.print(arr[i] + " ");
         }
-
     }
     public static void reverse(int arr[]){
         int start = 0;
