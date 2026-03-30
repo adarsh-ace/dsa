@@ -15,5 +15,7 @@ public class charp {
 
         for(char i:s){
             System.out.print(i+"#"+" ");
-        }}
+        }
+    }
+//    iufy
 }
