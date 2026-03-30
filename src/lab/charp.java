@@ -17,5 +17,4 @@ public class charp {
             System.out.print(i+"#"+" ");
         }
     }
-//    iufy
 }
